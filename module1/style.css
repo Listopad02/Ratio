@@ -2,57 +2,64 @@ body {
     margin: 0;
     padding: 0;
     background: #E5E5E5;
-    font-family: Ubuntu, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;
+}
+.header {
+    width: 70%;
+    display: flex;
+    margin: auto;
 }
 .rect1 {
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 240px;
     top: 77px;
     background: #9C69E2;
     border-radius: 20px;
 }
 .rect2 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 35px;
-    left: 269px;
     top: 62px;
+    margin-left: 27px;
     background: #F063B8;
     border-radius: 20px;
 }
 .header-nav-menu {
-    position: absolute;
     display: flex;
+    margin-top: 66px;
+    margin-left: 121px;
 }
 .header-nav-item {
-    position: relative;
     list-style-type: none;
     text-align: center;
     width: 53px;
     height: 30px;
-    left: 410px;
-    top: 55px;
-    font-style: normal;
+    margin-right: 40px;
     font-weight: 800;
     font-size: 16px;
     line-height: 160%;
+}
+.header-nav-link {
+    text-decoration: none;
+    color: #4B5D68;
+}
+.header-nav-link:hover {
     color: #212353;
+    transition: color .2s ease-in-out;
 }
-.header-nav-item:first-child {
-    margin-left: 0;
+.section {
+    margin-top: 143px;
 }
-.header-nav-item {
-    margin-left: 40px;
+.section-block {
+    width: 70%;
+    display: flex;
+    margin: auto;
 }
-.section-title {
-    position: absolute;
+.section-header {
     width: 645px;
     height: 184px;
-    left: 240px;
-    top: 240px;
-    font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
     font-size: 80px;
@@ -62,13 +69,8 @@ body {
     color: #212353;
 }
 .section-text {
-    position: absolute;
-    margin-top: 40px;
     width: 380px;
     height: 120px;
-    left: 240px;
-    top: 474px;
-    font-family: Avenir;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -76,11 +78,8 @@ body {
     color: #4B5D68;
 }
 .section-btn {
-    position: absolute;
     width: 170px;
     height: 60px;
-    left: 240px;
-    top: 644px;
     margin-top: 50px;
     background: #9C69E2;
     text-decoration: none;
@@ -95,28 +94,24 @@ body {
     color: #FFFFFF;
 }
 .section-img {
-    position: absolute;
-    width: 885px;
-    height: 468px;
-    left: 555px;
-    top: 400px;
-    background: url(img/image1.png);
+    width: 75%;
+    margin-top: 200px;
+    margin-left: -310px;
 }
-.second-container {
-    position: absolute;
+.section-description {
     width: 1117px;
     height: 560px;
-    left: 240px;
-    top: 903px;
-    margin-top: 99px;
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
 }
-.second-section-title {
-    position: absolute;
+.section-second-img {
+    width: 469px;
+    height: 496px;
+}
+.section-second-header {
     width: 475px;
     height: 100px;
-    font-style: normal;
+    margin-top: 125px;
     font-weight: bold;
     font-size: 40px;
     line-height: 130%;
@@ -124,21 +119,48 @@ body {
     align-items: center;
     color: #212353;
 }
-.second-section-text {
-    position: absolute;
+.section-text-description {
+    display: flex;
     width: 474px;
     height: 170px;
-    font-style: normal;
+    margin-top: 40px;
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
     color: #4B5D68;
 }
-.second-section-img {
-    position: absolute;
-    width: 469px;
-    height: 496px;
-    left: 256px;
-    top: 935px;
-    background: url(img/image2.png);
+.section-second-text-content {
+    margin-left: 65px;
+}
+.section-features-block {
+    width: 70%;
+    margin: auto;
+}
+.section-features-header {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    align-items: center;
+}
+.section-features-text {
+    width: 584px;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    margin: auto;
+    color: #4B5D68;
+}
+.block {
+    display: flex;
+}
+.container {
+    width: 442px;
+    height: 358px;
+    background: #68C9BA;
+    opacity: 0.1;
+    border-radius: 50px;
+
 }
