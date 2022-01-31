@@ -384,6 +384,7 @@ body {
     display: flex;
 }
 .media-link {
+    cursor: pointer;
     position: relative;
     margin-right: 14px;
     width: 50px;
@@ -399,4 +400,19 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
+}
+.media-link:first-child:hover {
+    opacity: 1;
+    background: rgb(46, 86, 218);
+    transition: background .2s ease-in;
+}
+.media-link:nth-child(2):hover {
+    opacity: 1;
+    background: rgb(37, 156, 224);
+    transition: background .2s ease-in;
+}
+.media-link:last-child:hover {
+    opacity: 1;
+    background: rgb(189, 9, 150);
+    transition: background .2s ease-in;
 }
