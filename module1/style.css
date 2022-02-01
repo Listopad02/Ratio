@@ -105,8 +105,7 @@ body {
     margin-left: -310px;
 }
 .section-description {
-    width: 1117px;
-    height: 560px;
+    width: 75%;
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
 }
@@ -115,9 +114,8 @@ body {
     height: 496px;
 }
 .section-second-header {
-    width: 475px;
-    height: 100px;
     margin-top: 125px;
+    margin-right: 30px;
     font-weight: bold;
     font-size: 40px;
     line-height: 130%;
@@ -126,9 +124,8 @@ body {
 }
 .section-text-description {
     display: flex;
-    width: 474px;
-    height: 170px;
     margin-top: 40px;
+    margin-right: 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
@@ -246,7 +243,7 @@ body {
 .section-testimonials {
     background: #9C69E2;
     border-radius: 50px;
-    width: 70%;
+    width: 70vw;
     margin: auto;
     padding-bottom: 60px;
 }
@@ -466,4 +463,106 @@ body {
     opacity: 1;
     background: rgb(189, 9, 150);
     transition: background .2s ease-in;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        display: block;
+    }
+    .section-description,
+    .section-testimonials {
+        width: 100vw;
+    }
+    .section-img,
+    .section-info-img,
+    .testimonials-second-text-content,
+    .feature-img,
+    .testimonials-avatar {
+        display: none;
+    }
+    .footer-content,
+    .data-info-blocks {
+        display: block;
+    }
+    .footer-media {
+        margin-top: 30px;
+    }
+    .section-content {
+        margin-left: 30px;
+    }
+    .section-second-header {
+        margin-top: 30px;
+    }
+    .container-2,
+    .container-4 {
+        margin-top: 50px;
+    }
+    .section-text-description,
+    .learn-btn {
+        margin-bottom: 20px;
+    }
+    .section-header,
+    .section-features-text,
+    .testimonials-comment,
+    .section-text, .container, .container-2, .container-3, .container-4 {
+        width: auto;
+        height: auto;
+    }
+    .section-block,
+    .block {
+        margin-left: 0;
+    }
+    .testimonials-text-content {
+        padding: 0;
+        margin-left: 10px;
+        width: 90%;
+    }
+    .header-nav-menu {
+        margin-left: 10px;
+    }
+    .header-nav-item {
+        margin-right: 12px;
+    }
+    .section-header {
+        font-size: 50px;
+    }
+    .container {
+        background: rgba(104, 201, 186, 0.1);
+        border-radius: 50px;
+    }
+    .container-2 {
+        background: rgba(156, 105, 226, 0.1);
+        border-radius: 50px;
+    }
+    .container-3 {
+        background: rgba(240, 99, 184, 0.1);
+        border-radius: 50px;
+    }
+    .container-4 {
+        background: rgba(45, 156, 219, 0.1);
+        border-radius: 50px;
+    }
+    .section-testimonials-header {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .footer-content {
+        padding-top: 20px;
+    }
+    .footer-line {
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header {
+        margin-left: 25px;
+    }
+    .section-header {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .arrow-btns {
+        margin-right: 25px;
+    }
 }
