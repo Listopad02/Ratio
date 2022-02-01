@@ -165,6 +165,7 @@ body {
     width: 531px;
     height: 358px;
     background: url(img/rect1.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .container-2 {
@@ -173,6 +174,7 @@ body {
     width: 531px;
     height: 358px;
     background: url(img/rect2.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .container-3 {
@@ -181,6 +183,7 @@ body {
     width: 531px;
     height: 358px;
     background: url(img/rect3.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .container-4 {
@@ -189,6 +192,7 @@ body {
     width: 531px;
     height: 358px;
     background: url(img/rect4.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 .data-info-blocks {
@@ -321,7 +325,6 @@ body {
     height: 130px;
     font-size: 18px;
     line-height: 180%;
-    /* color: #4B5D68; */
     color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -432,7 +435,6 @@ body {
     display: flex;
 }
 .media-link {
-    cursor: pointer;
     position: relative;
     margin-right: 14px;
     width: 50px;
@@ -467,42 +469,29 @@ body {
 
 
 @media screen and (max-width: 1280px) {
-    .section-img {
-        /* margin-top: 300px;
-        height: 80%; */
+    .section-img,
+    .section-info-img,
+    .testimonials-second-text-content,
+    .feature-img {
         display: none;
     }
-    .section-block {
-        width: auto;
-        height: auto;
-    }
-    .section-block {
-        width: 75%;
-    }
-    .section-description {
-        width: 75%;
-    }
-    .section-info-img {
-        display: none;
-    }
-    .data-info-blocks {
-        display: block;
-    }
+    .section-block,
     .block {
         width: auto;
         height: auto;
+    }
+    .section-block,
+    .section-description {
+        width: 75%;
+    }
+    .data-info-blocks {
+        display: block;
     }
     .section-second-header {
         margin-top: 20px;
     }
     .testimonials-text-content {
         margin: 10px 0 30px 5px;
-    }
-    .testimonials-second-text-content {
-        display: none;
-    }
-    .feature-img {
-        display: none;
     }
     .block {
         margin-left: 0;
@@ -553,14 +542,12 @@ body {
     .data-info-blocks {
         display: block;
     }
-    .footer-media {
+    .footer-media,
+    .section-second-header {
         margin-top: 30px;
     }
     .section-content {
         margin-left: 30px;
-    }
-    .section-second-header {
-        margin-top: 30px;
     }
     .container-2,
     .container-4 {
