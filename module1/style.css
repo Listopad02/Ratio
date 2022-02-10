@@ -523,6 +523,11 @@ body {
         margin-top: 50px;
     }
 }
+@media screen and (max-width: 1024px) {
+    .learn-btn {
+        padding-bottom: 20px;
+    }
+}
 @media screen and (max-width: 600px) {
     body {
         display: block;
@@ -553,8 +558,7 @@ body {
     .container-4 {
         margin-top: 50px;
     }
-    .section-text-description,
-    .learn-btn {
+    .section-text-description {
         margin-bottom: 20px;
     }
     .section-header,
