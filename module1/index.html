@@ -18,7 +18,10 @@
                 <div class="rect2"></div>
             </div>
         </div>
-
+<!-- именование не по БЭМ
+ class="header-nav" это уже отдельный блок class="nav"
+ не class="header-nav-item", а class="nav__item" и тд ниже
+ -->
         <nav class="header-nav">
             <ul class="header-nav-menu">
                 <li class="header-nav-item"><a href="#about" class="header-nav-link">About</a></li>
@@ -31,10 +34,11 @@
         <section class="section">
             <div class="section-block">
                 <div class="section-content">
+<!--     h1 может быть только 1 на странице               -->
                     <h1 class="section-header">Save your data storage here.</h1>
                     <p class="section-text">Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</p>
                     <a href="#about" class="section-btn">Learn more</a>
-                </div>  
+                </div>
                 <img src="img/image1.png" class="section-img" alt="img" />
             </div>
         </section>
@@ -44,7 +48,7 @@
                 <div class="section-second-text-content">
                     <h1 class="section-second-header">We are a high-level data storage bank</h1>
                     <p class="section-text-description">The place to store various data that you can access at any time through the internet and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.</p>
-                </div>  
+                </div>
             </div>
         </section>
         <section class="section">
@@ -67,7 +71,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="data-section">
                     <div class="data-img">
                         <img src="img/image4.png" alt="img" class="feature-img" />
@@ -93,13 +97,14 @@
                         <div class="data-content">
                             <h1 class="container-data-header">Print Out</h1>
                             <p class="container-data-text">Print out service gives you convenience if someday you need print data, just edit it all and just print it.</p>
+                                <!--  обвертка btn, а внутри тэг а,  class="learn-link" или class="learn-wrap"-->
                             <div class="learn-btn">
                                 <a href="#" class="container-data-btn">Learn more</a>
                                 <img src="img/next.png" alt="next" class="next-img">
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="data-section">
                     <div class="data-img">
                         <img src="img/image6.png" alt="img" class="feature-img" />
@@ -114,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </section>
         <section class="section">
@@ -146,11 +151,17 @@
                         <div class="slide-inactive"></div>
                     </div>
                     <div class="arrow-btns">
+                        <!--   это уже кнопки, соержашие картинки
+                           <button>
+                           <span class="visually-hidden">prev</span>
+                            <img src="img/slide-prev.png" alt="prev" class="btn-prev">
+                           </button>>
+                           -->
                         <img src="img/slide-prev.png" alt="prev" class="btn-prev">
                         <img src="img/slide-next.png" alt="next" class="btn-next">
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
@@ -164,9 +175,16 @@
                     <h2 class="footer-header">DataWarehoue</h2>
                 </div>
                 <div class="footer-address">
+                    <!--    это не абзац, тэг span        -->
                     <p>Warehouse Society, 234 <br/> Bahagia Ave Street PRBW 29281</p>
                 </div>
                 <div class="footer-mail">
+                        <!--
+                              телефон, почта и тп - через тэг а
+                              <a href="mailto:mail@mail.ru">Напишите нам</a>
+                              <a href="tel:+79001111111">+7-900-111-11-11</a>
+                         -->
+                    <!--    применение <br> плохая практика, перенос стилями при помощи max-width      -->
                     <p>info@warehouse.project <br/> 1-232-3434 (Main)</p>
                 </div>
                 <div class="footer-copyright">
@@ -187,7 +205,7 @@
                     </a>
                 </div>
             </div>
-        </div> 
+        </div>
     </footer>
 </body>
 </html>
