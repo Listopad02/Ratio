@@ -381,11 +381,7 @@ body {
 }
 .visibility-hidden {
     display: none;
-    /* visibility: hidden; */
 }
-/* .btn-prev {
-    margin-right: 20px;
-} */
 .footer-content {
     padding-top: 163px;
     padding-bottom: 65px;
