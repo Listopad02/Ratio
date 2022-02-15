@@ -16,6 +16,7 @@ body {
     font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif, serif;
 }
 .header {
+    /* TODO: не точное значение */
     width: 70%;
     display: flex;
     margin: auto;
@@ -115,6 +116,7 @@ body {
 }
 .section-description {
     width: 75%;
+    /* TODO: в прозрачности можно опускать 0. То есть будет '.15' */
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
 }
@@ -156,6 +158,7 @@ body {
 }
 .section-features-text {
     width: 584px;
+    /* TODO: лучше написать margin: 50px auto 100px auto */
     margin-top: 50px;
     font-weight: 500;
     font-size: 18px;
@@ -250,10 +253,12 @@ body {
     line-height: 160%;
     display: flex;
     align-items: center;
+    /* TODO: здесь тоже можно опустить 0 (.005em) */
     letter-spacing: 0.005em;
     color: var(--text-color);
 }
 .section-testimonials {
+    /* TODO: лучше уточнить, что это цвет фоновый - background-color */
     background: var(--purple);
     border-radius: 50px;
     width: 70vw;
@@ -276,6 +281,7 @@ body {
     margin-top: 88px;
     margin-left: 93px;
     background: var(--white);
+    /* TODO: в нулевых значениях 'px' не указываем */
     box-shadow: 0px 20px 0px rgba(46, 32, 66, 0.3);
     border-radius: 20px;
     padding: 60px 0 0 70px;
@@ -300,7 +306,7 @@ body {
     height: 90px;
     border-radius: 50px;
     object-fit: cover;
-} 
+}
 .testimonials-text {
     margin-left: 30px;
 }
@@ -334,7 +340,7 @@ body {
     height: 130px;
     font-size: 18px;
     line-height: 180%;
-    color: transparent;    
+    color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-image: linear-gradient(to right, var(--main-color), var(--gradient));
@@ -380,6 +386,7 @@ body {
     /* visibility: hidden; */
 }
 .btn-prev {
+    /* TODO: мусорные комментарии подчищаем */
     /* margin-right: 20px; */
 }
 .footer-content {
@@ -403,7 +410,9 @@ body {
 .footer-rect {
     margin-top: 12px;
     width: 20px;
+    /* TODO: зачем такие мелкие значения */
     height: 19.63px;
+    /* TODO: внимательнее к ';' */
     background: var(--purple);;
     border-radius: 20px;
 }
@@ -471,6 +480,7 @@ body {
 .media-link-logo {
     position: absolute;
     margin: auto;
+    /* TODO: лучше использовать flex для центрирования контента */
     left: 0;
     top: 0;
     bottom: 0;
