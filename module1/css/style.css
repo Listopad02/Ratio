@@ -9,11 +9,15 @@
     --text-color: #212353;
     --main-color: #4B5D68;
     --gradient: #eff1f2;
+    --facebook: rgb(46, 86, 218);
+    --twitter: rgb(37, 156, 224);
+    --instagram: rgb(189, 9, 150);
 }
 
 body {
     background: var(--main-background);
     font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif, serif;
+    min-width: 320px;
 }
 .header {
     width: 70%;
@@ -379,9 +383,9 @@ body {
     display: none;
     /* visibility: hidden; */
 }
-.btn-prev {
-    /* margin-right: 20px; */
-}
+/* .btn-prev {
+    margin-right: 20px;
+} */
 .footer-content {
     padding-top: 163px;
     padding-bottom: 65px;
@@ -478,17 +482,17 @@ body {
 }
 .media-link:first-child:hover {
     opacity: 1;
-    background: rgb(46, 86, 218);
+    background: var(--facebook);
     transition: background .2s ease-in;
 }
 .media-link:nth-child(2):hover {
     opacity: 1;
-    background: rgb(37, 156, 224);
+    background: var(--twitter);
     transition: background .2s ease-in;
 }
 .media-link:last-child:hover {
     opacity: 1;
-    background: rgb(189, 9, 150);
+    background: var(--instagram);
     transition: background .2s ease-in;
 }
 
